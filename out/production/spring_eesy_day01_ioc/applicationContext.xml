@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Spring 入门配置-->
+    <bean id="service" class="com.flyz.demo1.UserServiceImpl">
+        <property name="name" value="测试"></property>
+    </bean>
+
+    <!--Spring bean周期的配置-->
+    <bean id="customDao" class="com.flyz.demo2.CustomDaoImpl" init-method="init" destroy-method="destory">
+    </bean>
+
+
+    <!--Spring 构造方法属性注入-->
+
+    <bean id="car" class="com.flyz.demo4.Car">
+        <constructor-arg name="name" value="宝马"></constructor-arg>
+        <constructor-arg name="price" value="200000"></constructor-arg>
+    </bean>
+    <!--set方法属性注入-->
+
+    <bean id="car2" class="com.flyz.demo4.Car2">
+        <property name="name" value="奥迪"></property>
+        <property name="price" value="500000"></property>
+     </bean>
+
+
+    <!--set方法属性注入对象类型，构造方法也可以设置对象类型的属性-->
+    <bean id="emp" class="com.flyz.demo5.Employee">
+         <property name="name" value="曹进"></property>
+        <property name="car2" ref="car2"></property>
+    </bean>
+
+    <!--p名称空间基本属性的注入-->
+    <bean name="car3" class="com.flyz.demo6.Car3" p:name="法拉利" p:price="100000"></bean>
+    <!--p名称空间对象属性的注入-->
+    <bean name="employee2" class="com.flyz.demo6.Employee2" p:name="jerry" p:car2-ref="car2"></bean>
+
+    <!--spEL的使用-->
+    <bean id="car4" class="com.flyz.demo4.Car">
+        <constructor-arg name="name" value="#{'奇瑞'}"></constructor-arg>
+        <constructor-arg name="price" value="#{30000}"></constructor-arg>
+    </bean>
+
+    <bean id="emp3" class="com.flyz.demo5.Employee">
+        <property name="name" value="#{'shuang'}"></property>
+        <property name="car2" value="#{car2}"></property>
+    </bean>
+
+
+    <bean id="carinfo" class="com.flyz.demo7.CarInfo">
+        <property name="name" value="#{car2.name}"></property>
+        <property name="price" value="#{2222}"></property>
+    </bean>
+
+
+
+
+
+
+   <!--Spring 集合类型的属性注入-->
+    <bean id="collcetion" class="com.flyz.demo8.CollectionBean">
+        <property name="arrs">
+           <list>
+               <value>王东</value>
+               <value>郑爽</value>
+               <value>于文文</value>
+           </list>
+        </property>
+
+        <property name="lists">
+            <list>
+                <value>aa</value>
+                <value>bb</value>
+                <value>cc</value>
+            </list>
+        </property>
+
+        <property name="sets">
+            <set>
+                <value>11</value>
+                <value>22</value>
+                <value>33</value>
+            </set>
+        </property>
+
+        <property name="maps">
+            <map>
+                <entry key="aaa" value="1111"></entry>
+                <entry key="bbb" value="2222"></entry>
+                <entry key="ccc" value="3333"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>
