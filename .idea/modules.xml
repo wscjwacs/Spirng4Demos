@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring4_day01_ioc/spring4_day01_ioc.iml" filepath="$PROJECT_DIR$/spring4_day01_ioc/spring4_day01_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_eesy_day01_ioc/spring_eesy_day01_ioc.iml" filepath="$PROJECT_DIR$/spring_eesy_day01_ioc/spring_eesy_day01_ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_eesy_day02_anno/spring_eesy_day02_anno.iml" filepath="$PROJECT_DIR$/spring_eesy_day02_anno/spring_eesy_day02_anno.iml" />
     </modules>
   </component>
 </project>
