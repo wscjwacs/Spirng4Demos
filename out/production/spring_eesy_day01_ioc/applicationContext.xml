@@ -3,7 +3,8 @@
        xmlns:p="http://www.springframework.org/schema/p"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--Spring 入门配置-->
     <bean id="service" class="com.flyz.demo1.UserServiceImpl">
@@ -62,8 +63,11 @@
 
 
 
-   <!--Spring 集合类型的属性注入-->
+   <!--Spring 集合类型的属性注入   。。。。。。。。。。                              -->
+
+
     <bean id="collcetion" class="com.flyz.demo8.CollectionBean">
+        <!--数组类型-->
         <property name="arrs">
            <list>
                <value>王东</value>
@@ -71,6 +75,7 @@
                <value>于文文</value>
            </list>
         </property>
+        <!--list类型-->
 
         <property name="lists">
             <list>
@@ -79,6 +84,7 @@
                 <value>cc</value>
             </list>
         </property>
+        <!--set类型-->
 
         <property name="sets">
             <set>
@@ -87,7 +93,7 @@
                 <value>33</value>
             </set>
         </property>
-
+        <!--map类型-->
         <property name="maps">
             <map>
                 <entry key="aaa" value="1111"></entry>

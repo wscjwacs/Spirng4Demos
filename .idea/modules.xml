@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring_eesy_day02_anno/spring_eesy_day02_anno.iml" filepath="$PROJECT_DIR$/spring_eesy_day02_anno/spring_eesy_day02_anno.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_eesy_day02_anno/spring_eesy_day02_anno_xml.iml" filepath="$PROJECT_DIR$/spring_eesy_day02_anno/spring_eesy_day02_anno_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_eesy_day02_xml_anno/spring_eesy_day02_xml_anno.iml" filepath="$PROJECT_DIR$/spring_eesy_day02_xml_anno/spring_eesy_day02_xml_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_eesy_day03_aop_anno/spring_eesy_day03_aop_anno.iml" filepath="$PROJECT_DIR$/spring_eesy_day03_aop_anno/spring_eesy_day03_aop_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_eesy_day03_aop_xml/spring_eesy_day03_aop_xml.iml" filepath="$PROJECT_DIR$/spring_eesy_day03_aop_xml/spring_eesy_day03_aop_xml.iml" />
     </modules>
   </component>
 </project>
