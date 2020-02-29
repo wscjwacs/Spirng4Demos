@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+     <!--&lt;!&ndash;Spring 的IOC的注解入门&ndash;&gt;-->
+      <!--&lt;!&ndash;配置组件扫描，那些包下面的那些类使用注解&ndash;&gt;-->
+    <!--<context:component-scan base-package="com.flyz"></context:component-scan>-->
+
+
+    <!--在没有扫描的情况下使用属性注入的注解：@Resource ,@Value ,@AutoWired ...-->
+    <context:annotation-config/>
+
+
+    <bean id="productService" class="com.flyz.demo1.ProductService"></bean>
+    <bean id="productDao" class="com.flyz.demo1.ProductDao"></bean>
+    <bean id="orderDao" class="com.flyz.demo1.OrderDao"></bean>
+</beans>
+
+
+

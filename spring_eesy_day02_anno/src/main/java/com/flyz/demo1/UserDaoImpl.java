@@ -2,9 +2,12 @@ package com.flyz.demo1;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 //@Component(value = "userDao")
-@Component("userDao") /**相当于    <bean id="userDao" class="com.flyz.demo1.UserDaoImpl"></bean> **/
+//@Component("userDao") /**相当于    <bean id="userDao" class="com.flyz.demo1.UserDaoImpl"></bean> **/
+
+@Repository("userDao")
 public class UserDaoImpl implements UserDao {
 
     /**
