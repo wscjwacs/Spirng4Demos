@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-5.1.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/spring_eesy_day04_jdbc_template/web/WEB-INF/libs/mysql-connector-java-5.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

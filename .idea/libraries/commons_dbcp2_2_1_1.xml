@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="commons-dbcp2-2.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/spring_eesy_day04_dpcp_template/web/WEB-INF/libs/commons-dbcp2-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/spring_eesy_day04_dpcp_template/web/WEB-INF/libs/commons-pool2-2.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

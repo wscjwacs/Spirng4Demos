@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="spring_eesy_day04_jdbc_template:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/spring_eesy_day04_jdbc_template_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="spring_eesy_day04_jdbc_template/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spring_eesy_day04_jdbc_template" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
